@@ -1,1 +1,1 @@
-include ':crashlog'
+include ':crashlog', ':crashlogtest'
