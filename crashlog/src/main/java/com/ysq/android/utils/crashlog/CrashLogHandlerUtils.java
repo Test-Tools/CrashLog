@@ -131,9 +131,13 @@ public class CrashLogHandlerUtils implements UncaughtExceptionHandler {
 		}
 	}
 
+	/**
+	 * @param ex 异常
+	 * @return @code false,因为本工具只保存异常日志,不捕获异常,所以只返回@code false
+	 */
 	private boolean handleException(Throwable ex) {
 		if (ex != null) {
-			return saveCrashInfo2File(ex);
+			saveCrashInfo2File(ex);
 		}
 		return false;
 	}
