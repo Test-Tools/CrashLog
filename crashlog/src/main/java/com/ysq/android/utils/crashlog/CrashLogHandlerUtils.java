@@ -53,7 +53,7 @@ public class CrashLogHandlerUtils implements UncaughtExceptionHandler {
 		mContext = application;
 		// 设置log默认保存目录
 		if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
-			mSaveDir = application.getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS);
+			mSaveDir = application.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS);
 		}
 		// 设置默认的在log上面添加的额外信息
 		setDefaultsTopMsg();
